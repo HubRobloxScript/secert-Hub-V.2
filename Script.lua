@@ -14,39 +14,28 @@ local Section1 = Tab:AddSection({
 		Name = "Player"
 })
 OrionLib:MakeNotification({
-	Name = "Welcome",
+	Name = "Welcome To my Hub",
 	Content = "welcome To Secert Hub",
 	Image = "rbxassetid://4483345998",
 	Time = 3
 })
-Tab:AddSlider({
-	Name = "jumppower",
-	Min = 50,
-	Max = 10000,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "JumpP",
-	Callback = function(JumpP)
-		players.Character.Humanoid.JumpPower = JumpP
-	end    
-})
-Tab:AddSlider({
-	Name = "Speedwalking",
-	Min = 16,
-	Max = 1000,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "S",
-	Callback = function(S)
-		players.Character.Humanoid.WalkSpeed = S
-	end    
-})
-})
+
 Tab:AddButton({
-	Name = "Reset Player",
+	Name = "reset Yourself",
 	Callback = function()
-                 players.Character.Humanoid.Health = 0
+        players.Character.Humanoid.Health = 0
   	end    
+})
+
+Tab:AddSlider({
+	Name = "Speed",
+	Min = 0,
+	Max = 20,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Speed",
+	Callback = function(Value)
+		players.Character.Humanoid.WalkSpeed = Value
+	end    
 })
