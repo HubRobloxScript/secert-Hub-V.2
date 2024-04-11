@@ -29,8 +29,8 @@ Tab:AddButton({
 
 Tab:AddSlider({
 	Name = "Speed",
-	Min = 0,
-	Max = 20,
+	Min = 16,
+	Max = 100,
 	Default = 5,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
