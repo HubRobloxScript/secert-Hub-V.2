@@ -77,6 +77,18 @@ Tab:AddSlider({
 		players.Character.Humanoid.JumpPower = JumpP
 	end    
 })
+Tab:AddSlider({
+	Name = "SpeedWalk",
+	Min = 16,
+	Max = 1000,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "spped",
+	Callback = function(s)
+		players.Character.Humanoid.JumpPower = s
+	end    
+})
 Tab:AddButton({
 	Name = "Reset Player",
 	Callback = function()
