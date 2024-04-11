@@ -32,20 +32,21 @@ Tab:AddSlider({
 	end    
 })
 Tab:AddSlider({
-	Name = "SpeedWalk",
+	Name = "Speed",
 	Min = 16,
 	Max = 1000,
 	Default = 5,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
-	ValueName = "speed",
-	Callback = function(s)
-		players.Character.Humanoid.SpeedWalk = speed
+	ValueName = "Speed",
+	Callback = function(Speed)
+		players.Character.Humanoid.WalkSpeed = Speed
 	end    
+})
 })
 Tab:AddButton({
 	Name = "Reset Player",
 	Callback = function()
-        players.Character.Humanoid.Health = 0
+           players.Character.Humanoid.Health = 0
   	end    
 })
