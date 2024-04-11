@@ -86,7 +86,7 @@ Tab:AddSlider({
 	Increment = 1,
 	ValueName = "spped",
 	Callback = function(s)
-		players.Character.Humanoid.JumpPower = s
+		players.Character.Humanoid.SpeedWalk = s
 	end    
 })
 Tab:AddButton({
