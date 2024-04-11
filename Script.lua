@@ -39,3 +39,20 @@ Tab:AddSlider({
 		players.Character.Humanoid.WalkSpeed = Value
 	end    
 })
+
+local Tab1 = Window:MakeTab({
+	Name = "Others",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section2 = Tab1:AddSection({
+	Name = "Script"
+})
+
+Tab1:AddButton({
+	Name = "R3TH (mm2)",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()
+  	end    
+})
