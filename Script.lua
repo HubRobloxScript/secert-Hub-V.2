@@ -38,9 +38,9 @@ Tab:AddSlider({
 	Default = 5,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
-	ValueName = "spped",
+	ValueName = "speed",
 	Callback = function(s)
-		players.Character.Humanoid.SpeedWalk = s
+		players.Character.Humanoid.SpeedWalk = speed
 	end    
 })
 Tab:AddButton({
