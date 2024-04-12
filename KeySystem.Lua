@@ -108,7 +108,7 @@ UIAspectRatioConstraint.AspectRatio = 1.898
 
 -- Scripts:
 
-local function RRTJYA_fake_script() -- Check.LocalScript 
+local function FHCVG_fake_script() -- Check.LocalScript 
 	local script = Instance.new('LocalScript', Check)
 
 	function Hub()
@@ -128,8 +128,8 @@ local function RRTJYA_fake_script() -- Check.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RRTJYA_fake_script)()
-local function ILDUU_fake_script() -- Frame.SmoothDrag 
+coroutine.wrap(FHCVG_fake_script)()
+local function RAUY_fake_script() -- Frame.SmoothDrag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Drag = script.Parent
@@ -172,8 +172,4 @@ local function ILDUU_fake_script() -- Frame.SmoothDrag
 		end)
 	
 end
-coroutine.wrap(ILDUU_fake_script)()
-
-end
-coroutine.wrap(PSSI_fake_script)()
-
+coroutine.wrap(RAUY_fake_script)()
