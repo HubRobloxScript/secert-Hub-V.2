@@ -67,6 +67,6 @@ Tab1:AddButton({
 Tab1:AddButton({
 	Name = "Gui Auto parry(Blade Ball)",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))()
+		loadstring(game:HttpGet("https://scriptblox.com/raw/UPD-Blade-Ball-ZBEDOL-HUB-9144"))()
     end    
 })
