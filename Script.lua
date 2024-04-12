@@ -70,3 +70,10 @@ Tab1:AddButton({
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua'))()
     end    
 })
+
+Tab1:AddButton({
+	Name = "Secert Hub v2 Lite",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/HubRobloxScript/Secert-Hub-v2-Lite/main/LIite.lua'))()
+    end    
+})
