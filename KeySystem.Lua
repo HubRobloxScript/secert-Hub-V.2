@@ -173,7 +173,7 @@ local function ILDUU_fake_script() -- Frame.SmoothDrag
 	
 end
 coroutine.wrap(ILDUU_fake_script)()
-	
+
 end
 coroutine.wrap(PSSI_fake_script)()
 
