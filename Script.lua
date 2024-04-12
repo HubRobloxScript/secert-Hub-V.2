@@ -63,3 +63,10 @@ Tab1:AddButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
   	end    
 })
+
+Tab1:AddButton({
+	Name = "Gui Auto parry(Blade Ball)",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))()
+    end    
+})
