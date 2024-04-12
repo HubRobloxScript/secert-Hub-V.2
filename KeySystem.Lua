@@ -20,8 +20,8 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.336692244, 0, 0.30864197, 0)
-Frame.Size = UDim2.new(0, 408, 0, 248)
+Frame.Position = UDim2.new(0.431062043, 0, 0.30864197, 0)
+Frame.Size = UDim2.new(0, 171, 0, 248)
 Frame.Active = true
 
 UICorner.Parent = Frame
@@ -31,7 +31,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(0, 408, 0, 32)
+TextLabel.Size = UDim2.new(0, 171, 0, 56)
 TextLabel.Font = Enum.Font.SourceSansBold
 TextLabel.Text = "KeySystem"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -44,14 +44,14 @@ Field.Parent = Frame
 Field.BackgroundColor3 = Color3.fromRGB(180, 255, 195)
 Field.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Field.BorderSizePixel = 10
-Field.Position = UDim2.new(0, 0, 0.230125546, 0)
-Field.Size = UDim2.new(0, 408, 0, 51)
-Field.Font = Enum.Font.SourceSans
+Field.Position = UDim2.new(0.147059038, 0, 0.26238361, 0)
+Field.Size = UDim2.new(0, 120, 0, 44)
+Field.Font = Enum.Font.SourceSansBold
 Field.PlaceholderText = "Password"
 Field.Text = ""
 Field.TextColor3 = Color3.fromRGB(0, 0, 0)
 Field.TextScaled = true
-Field.TextSize = 14.000
+Field.TextSize = 20.000
 Field.TextWrapped = true
 
 Check.Name = "Check"
@@ -59,8 +59,8 @@ Check.Parent = Frame
 Check.BackgroundColor3 = Color3.fromRGB(93, 255, 161)
 Check.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Check.BorderSizePixel = 10
-Check.Position = UDim2.new(0, 0, 0.511523068, 0)
-Check.Size = UDim2.new(0, 407, 0, 38)
+Check.Position = UDim2.new(0.187994704, 0, 0.672813416, 0)
+Check.Size = UDim2.new(0, 105, 0, 24)
 Check.Font = Enum.Font.SourceSansBold
 Check.Text = "Check"
 Check.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -70,7 +70,7 @@ Check.TextWrapped = true
 
 -- Scripts:
 
-local function UXHYUQS_fake_script() -- Check.LocalScript 
+local function BSET_fake_script() -- Check.LocalScript 
 	local script = Instance.new('LocalScript', Check)
 
 	function Hub()
@@ -88,8 +88,8 @@ local function UXHYUQS_fake_script() -- Check.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UXHYUQS_fake_script)()
-local function IRLCGVV_fake_script() -- Frame.SmoothDrag 
+coroutine.wrap(BSET_fake_script)()
+local function PSSI_fake_script() -- Frame.SmoothDrag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Drag = script.Parent
@@ -132,4 +132,5 @@ local function IRLCGVV_fake_script() -- Frame.SmoothDrag
 		end)
 	
 end
-coroutine.wrap(IRLCGVV_fake_script)()
+coroutine.wrap(PSSI_fake_script)()
+
