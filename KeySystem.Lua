@@ -12,6 +12,10 @@ local IT = Instance.new("TextLabel")
 local Status = Instance.new("TextLabel")
 local Title = Instance.new("TextLabel")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Choosing = Instance.new("Frame")
+local Normal = Instance.new("TextButton")
+local Lite = Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -106,21 +110,69 @@ Title.TextWrapped = true
 UIAspectRatioConstraint.Parent = Frame
 UIAspectRatioConstraint.AspectRatio = 1.898
 
+Choosing.Name = "Choosing"
+Choosing.Parent = ScreenGui
+Choosing.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+Choosing.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Choosing.BorderSizePixel = 0
+Choosing.Position = UDim2.new(0.244721681, 0, 0.766975284, 0)
+Choosing.Size = UDim2.new(0, 617, 0, 111)
+Choosing.Visible = false
+
+Normal.Name = "Normal"
+Normal.Parent = Choosing
+Normal.BackgroundColor3 = Color3.fromRGB(179, 254, 194)
+Normal.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Normal.BorderSizePixel = 10
+Normal.Position = UDim2.new(0.030794166, 0, 0.45045045, 0)
+Normal.Size = UDim2.new(0, 200, 0, 30)
+Normal.Font = Enum.Font.SourceSansBold
+Normal.Text = "Normal"
+Normal.TextColor3 = Color3.fromRGB(0, 0, 0)
+Normal.TextScaled = true
+Normal.TextSize = 14.000
+Normal.TextWrapped = true
+
+Lite.Name = "Lite"
+Lite.Parent = Choosing
+Lite.BackgroundColor3 = Color3.fromRGB(179, 254, 194)
+Lite.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Lite.BorderSizePixel = 10
+Lite.Position = UDim2.new(0.640194476, 0, 0.45045045, 0)
+Lite.Size = UDim2.new(0, 200, 0, 30)
+Lite.Font = Enum.Font.SourceSansBold
+Lite.Text = "Lite(Tester)"
+Lite.TextColor3 = Color3.fromRGB(0, 0, 0)
+Lite.TextScaled = true
+Lite.TextSize = 14.000
+Lite.TextWrapped = true
+
+Title_2.Name = "Title"
+Title_2.Parent = Choosing
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.00162074552, 0, -0.00814956799, 0)
+Title_2.Size = UDim2.new(0, 616, 0, 29)
+Title_2.Font = Enum.Font.SourceSansBold
+Title_2.Text = "Select The Hub Verison"
+Title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
 -- Scripts:
 
-local function FHCVG_fake_script() -- Check.LocalScript 
+local function MIKHJA_fake_script() -- Check.LocalScript 
 	local script = Instance.new('LocalScript', Check)
 
-	function Hub()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HubRobloxScript/secert-Hub-V.2/main/Script.lua'))()
-	end
-	
 	script.Parent.MouseButton1Click:Connect(function()
 		if script.Parent.Parent.Field.Text == "Gemcast" then
 			script.Parent.Parent.Status.Text = "Correct Password"
 			wait(1)
 			script.Parent.Parent.Parent.Frame.Visible = false
-			Hub()
+			script.Parent.Parent.Parent.Choosing.Visible = true
 		else
 			script.Parent.Parent.Status.Text = "incorrect Password"
 			wait(1)
@@ -128,8 +180,8 @@ local function FHCVG_fake_script() -- Check.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FHCVG_fake_script)()
-local function RAUY_fake_script() -- Frame.SmoothDrag 
+coroutine.wrap(MIKHJA_fake_script)()
+local function AUKMQPF_fake_script() -- Frame.SmoothDrag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Drag = script.Parent
@@ -172,4 +224,32 @@ local function RAUY_fake_script() -- Frame.SmoothDrag
 		end)
 	
 end
-coroutine.wrap(RAUY_fake_script)()
+coroutine.wrap(AUKMQPF_fake_script)()
+local function PIAQNOL_fake_script() -- Normal.LocalScript 
+	local script = Instance.new('LocalScript', Normal)
+
+	function liteHub()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/HubRobloxScript/Secert-Hub-v2-Lite/main/LIite.lua'))()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		liteHub()
+		wait(1)
+		script.Parent.Parent.Parent.Choosing.Visible = false
+	end)
+end
+coroutine.wrap(PIAQNOL_fake_script)()
+local function OWDXU_fake_script() -- Lite.LocalScript 
+	local script = Instance.new('LocalScript', Lite)
+
+	function NormalHub()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/HubRobloxScript/secert-Hub-V.2/main/Script.lua'))()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		NormalHub()
+		wait(1)
+		script.Parent.Parent.Parent.Choosing.Visible = false
+	end)
+end
+coroutine.wrap(OWDXU_fake_script)()
