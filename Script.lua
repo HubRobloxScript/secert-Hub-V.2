@@ -65,7 +65,7 @@ Tab1:AddButton({
 })
 
 Tab1:AddButton({
-	Name = "Gui Auto parry(Blade Ball)",
+	Name = "Bedol Hub(Blade Ball)",
 	Callback = function()
 		loadstring(game:HttpGet("https://scriptblox.com/raw/UPD-Blade-Ball-ZBEDOL-HUB-9144"))()
     end    
