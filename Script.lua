@@ -56,3 +56,10 @@ Tab1:AddButton({
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()
   	end    
 })
+
+Tab1:AddButton({
+	Name = "Black (door)",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
+  	end    
+})
