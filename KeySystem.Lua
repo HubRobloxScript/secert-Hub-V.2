@@ -6,9 +6,12 @@
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
 local Field = Instance.new("TextBox")
 local Check = Instance.new("TextButton")
+local IT = Instance.new("TextLabel")
+local Status = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 
 --Properties:
 
@@ -20,32 +23,19 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.431062043, 0, 0.30864197, 0)
-Frame.Size = UDim2.new(0, 171, 0, 248)
+Frame.Position = UDim2.new(0.244721681, 0, 0.175925925, 0)
+Frame.Size = UDim2.new(0, 617, 0, 325)
 Frame.Active = true
 
 UICorner.Parent = Frame
-
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(0, 171, 0, 56)
-TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "KeySystem"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
 
 Field.Name = "Field"
 Field.Parent = Frame
 Field.BackgroundColor3 = Color3.fromRGB(180, 255, 195)
 Field.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Field.BorderSizePixel = 10
-Field.Position = UDim2.new(0.147059038, 0, 0.26238361, 0)
-Field.Size = UDim2.new(0, 120, 0, 44)
+Field.Position = UDim2.new(0.181094676, 0, 0.206998944, 0)
+Field.Size = UDim2.new(0, 411, 0, 44)
 Field.Font = Enum.Font.SourceSansBold
 Field.PlaceholderText = "Password"
 Field.Text = ""
@@ -59,18 +49,66 @@ Check.Parent = Frame
 Check.BackgroundColor3 = Color3.fromRGB(93, 255, 161)
 Check.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Check.BorderSizePixel = 10
-Check.Position = UDim2.new(0.187994704, 0, 0.672813416, 0)
-Check.Size = UDim2.new(0, 105, 0, 24)
+Check.Position = UDim2.new(0.356552243, 0, 0.534351885, 0)
+Check.Size = UDim2.new(0, 176, 0, 24)
 Check.Font = Enum.Font.SourceSansBold
-Check.Text = "Check"
+Check.Text = "Submit"
 Check.TextColor3 = Color3.fromRGB(0, 0, 0)
 Check.TextScaled = true
 Check.TextSize = 14.000
 Check.TextWrapped = true
 
+IT.Name = "IT"
+IT.Parent = Frame
+IT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IT.BackgroundTransparency = 1.000
+IT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IT.BorderSizePixel = 0
+IT.Position = UDim2.new(0.166924924, 0, 0.646153867, 0)
+IT.Size = UDim2.new(0, 411, 0, 29)
+IT.Font = Enum.Font.SourceSansBold
+IT.Text = "Status:"
+IT.TextColor3 = Color3.fromRGB(0, 0, 0)
+IT.TextScaled = true
+IT.TextSize = 14.000
+IT.TextWrapped = true
+
+Status.Name = "Status"
+Status.Parent = Frame
+Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Status.BackgroundTransparency = 1.000
+Status.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Status.BorderSizePixel = 0
+Status.Position = UDim2.new(0.166924924, 0, 0.735384643, 0)
+Status.Size = UDim2.new(0, 411, 0, 33)
+Status.Font = Enum.Font.SourceSansBold
+Status.Text = "Unknowing"
+Status.TextColor3 = Color3.fromRGB(0, 0, 0)
+Status.TextScaled = true
+Status.TextSize = 14.000
+Status.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0, 0, 0.910769224, 0)
+Title.Size = UDim2.new(0, 616, 0, 29)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "Secert Hub V2 KEY SYSTEM"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UIAspectRatioConstraint.Parent = Frame
+UIAspectRatioConstraint.AspectRatio = 1.898
+
 -- Scripts:
 
-local function BSET_fake_script() -- Check.LocalScript 
+local function RRTJYA_fake_script() -- Check.LocalScript 
 	local script = Instance.new('LocalScript', Check)
 
 	function Hub()
@@ -79,17 +117,19 @@ local function BSET_fake_script() -- Check.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		if script.Parent.Parent.Field.Text == "Gemcast" then
-			script.Parent.Parent.Field.Text = "CORRECT"
+			script.Parent.Parent.Status.Text = "Correct Password"
 			wait(1)
 			script.Parent.Parent.Parent.Frame.Visible = false
 			Hub()
 		else
-			script.Parent.Parent.Field.Text = "INCORRECT"
+			script.Parent.Parent.Status.Text = "incorrect Password"
+			wait(1)
+			script.Parent.Parent.Status.Text = "Unknowing"
 		end
 	end)
 end
-coroutine.wrap(BSET_fake_script)()
-local function PSSI_fake_script() -- Frame.SmoothDrag 
+coroutine.wrap(RRTJYA_fake_script)()
+local function ILDUU_fake_script() -- Frame.SmoothDrag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Drag = script.Parent
@@ -130,6 +170,9 @@ local function PSSI_fake_script() -- Frame.SmoothDrag
 				update(input)
 			end
 		end)
+	
+end
+coroutine.wrap(ILDUU_fake_script)()
 	
 end
 coroutine.wrap(PSSI_fake_script)()
