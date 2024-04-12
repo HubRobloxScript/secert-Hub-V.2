@@ -29,7 +29,7 @@ Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.244721681, 0, 0.175925925, 0)
 Frame.Size = UDim2.new(0, 617, 0, 325)
-Frame.Active = true
+Frame.Active =  true
 
 UICorner.Parent = Frame
 
@@ -164,7 +164,7 @@ Title_2.TextWrapped = true
 
 -- Scripts:
 
-local function MIKHJA_fake_script() -- Check.LocalScript 
+local function ATTUD_fake_script() -- Check.LocalScript 
 	local script = Instance.new('LocalScript', Check)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -180,8 +180,8 @@ local function MIKHJA_fake_script() -- Check.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MIKHJA_fake_script)()
-local function AUKMQPF_fake_script() -- Frame.SmoothDrag 
+coroutine.wrap(ATTUD_fake_script)()
+local function MWVEE_fake_script() -- Frame.SmoothDrag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Drag = script.Parent
@@ -224,23 +224,9 @@ local function AUKMQPF_fake_script() -- Frame.SmoothDrag
 		end)
 	
 end
-coroutine.wrap(AUKMQPF_fake_script)()
-local function PIAQNOL_fake_script() -- Normal.LocalScript 
+coroutine.wrap(MWVEE_fake_script)()
+local function GCTSHE_fake_script() -- Normal.LocalScript 
 	local script = Instance.new('LocalScript', Normal)
-
-	function liteHub()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/HubRobloxScript/Secert-Hub-v2-Lite/main/LIite.lua'))()
-	end
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		liteHub()
-		wait(1)
-		script.Parent.Parent.Parent.Choosing.Visible = false
-	end)
-end
-coroutine.wrap(PIAQNOL_fake_script)()
-local function OWDXU_fake_script() -- Lite.LocalScript 
-	local script = Instance.new('LocalScript', Lite)
 
 	function NormalHub()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/HubRobloxScript/secert-Hub-V.2/main/Script.lua'))()
@@ -252,4 +238,18 @@ local function OWDXU_fake_script() -- Lite.LocalScript
 		script.Parent.Parent.Parent.Choosing.Visible = false
 	end)
 end
-coroutine.wrap(OWDXU_fake_script)()
+coroutine.wrap(GCTSHE_fake_script)()
+local function SZNL_fake_script() -- Lite.LocalScript 
+	local script = Instance.new('LocalScript', Lite)
+
+	function liteHub()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/HubRobloxScript/Secert-Hub-v2-Lite/main/LIite.lua'))()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		liteHub()
+		wait(1)
+		script.Parent.Parent.Parent.Choosing.Visible = false
+	end)
+end
+coroutine.wrap(SZNL_fake_script)()
