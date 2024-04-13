@@ -15,12 +15,14 @@ local Choosing = Instance.new("Frame")
 local Normal = Instance.new("TextButton")
 local Lite = Instance.new("TextButton")
 local Title_2 = Instance.new("TextLabel")
+local SECERTFRAME = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = true
+ScreenGui.ResetOnSpawn = false
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
@@ -158,26 +160,53 @@ Title_2.TextScaled = true
 Title_2.TextSize = 14.000
 Title_2.TextWrapped = true
 
+SECERTFRAME.Name = "SECERTFRAME"
+SECERTFRAME.Parent = ScreenGui
+SECERTFRAME.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
+SECERTFRAME.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SECERTFRAME.BorderSizePixel = 0
+SECERTFRAME.Position = UDim2.new(0.395073563, 0, 0.104938269, 0)
+SECERTFRAME.Size = UDim2.new(0, 308, 0, 74)
+SECERTFRAME.Visible = false
+
+TextButton.Parent = SECERTFRAME
+TextButton.BackgroundColor3 = Color3.fromRGB(180, 255, 195)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0292207785, 0, 0.162162155, 0)
+TextButton.Size = UDim2.new(0, 289, 0, 50)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Execute Secert One"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
 -- Scripts:
 
-local function CJYVG_fake_script() -- Check.LocalScript 
+local function RYUS_fake_script() -- Check.LocalScript 
 	local script = Instance.new('LocalScript', Check)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		if script.Parent.Parent.Field.Text == "Gemcast" then
 			script.Parent.Parent.Status.Text = "Correct Password"
-                        wait(0.5)
-                        loadstring(game:HttpGet('https://raw.githubusercontent.com/HubRobloxScript/UpdateLogA/main/UpdateLog.lua'))()
+			wait(1)
 			script.Parent.Parent.Parent.Frame.Visible = false
 			script.Parent.Parent.Parent.Choosing.Visible = true
+		elseif script.Parent.Parent.Field.Text == "secert" then
+			script.Parent.Parent.Status.Text = "secert Password"
+			wait(1)
+			script.Parent.Parent.Parent.Frame.Visible = false
+			script.Parent.Parent.Parent.SECERTFRAME.Visible = true
 		else
 			script.Parent.Parent.Status.Text = "incorrect Password"
+			wait(1)
 			script.Parent.Parent.Status.Text = "Unknowing"
 		end
 	end)
 end
-coroutine.wrap(CJYVG_fake_script)()
-local function AYXNJP_fake_script() -- Frame.SmoothDrag 
+coroutine.wrap(RYUS_fake_script)()
+local function VNFUWB_fake_script() -- Frame.SmoothDrag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Drag = script.Parent
@@ -220,8 +249,8 @@ local function AYXNJP_fake_script() -- Frame.SmoothDrag
 		end)
 	
 end
-coroutine.wrap(AYXNJP_fake_script)()
-local function OWBGKJU_fake_script() -- Normal.LocalScript 
+coroutine.wrap(VNFUWB_fake_script)()
+local function OOGNEN_fake_script() -- Normal.LocalScript 
 	local script = Instance.new('LocalScript', Normal)
 
 	function NormalHub()
@@ -233,8 +262,8 @@ local function OWBGKJU_fake_script() -- Normal.LocalScript
 		script.Parent.Parent.Parent.Choosing.Visible = false
 	end)
 end
-coroutine.wrap(OWBGKJU_fake_script)()
-local function JSBDQ_fake_script() -- Lite.LocalScript 
+coroutine.wrap(OOGNEN_fake_script)()
+local function WAPH_fake_script() -- Lite.LocalScript 
 	local script = Instance.new('LocalScript', Lite)
 
 	function liteHub()
@@ -246,4 +275,18 @@ local function JSBDQ_fake_script() -- Lite.LocalScript
 		script.Parent.Parent.Parent.Choosing.Visible = false
 	end)
 end
-coroutine.wrap(JSBDQ_fake_script)()
+coroutine.wrap(WAPH_fake_script)()
+local function XWXX_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	function TheHub()
+		loadstring(game:HttpGet('https://pastebin.com/raw/2b5qqHaT'))()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		TheHub()
+		wait(0.5)
+		script.Parent.Parent.Parent.SECERTFRAME.Visible = false
+	end)
+end
+coroutine.wrap(XWXX_fake_script)()
