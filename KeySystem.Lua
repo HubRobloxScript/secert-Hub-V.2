@@ -166,12 +166,12 @@ local function CJYVG_fake_script() -- Check.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		if script.Parent.Parent.Field.Text == "Gemcast" then
 			script.Parent.Parent.Status.Text = "Correct Password"
-			wait(1)
+                        wait(0.5)
+                        loadstring(game:HttpGet('https://raw.githubusercontent.com/HubRobloxScript/UpdateLogA/main/UpdateLog.lua'))()
 			script.Parent.Parent.Parent.Frame.Visible = false
 			script.Parent.Parent.Parent.Choosing.Visible = true
 		else
 			script.Parent.Parent.Status.Text = "incorrect Password"
-			wait(1)
 			script.Parent.Parent.Status.Text = "Unknowing"
 		end
 	end)
