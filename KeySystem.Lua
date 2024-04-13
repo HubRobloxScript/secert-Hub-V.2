@@ -11,7 +11,6 @@ local Check = Instance.new("TextButton")
 local IT = Instance.new("TextLabel")
 local Status = Instance.new("TextLabel")
 local Title = Instance.new("TextLabel")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local Choosing = Instance.new("Frame")
 local Normal = Instance.new("TextButton")
 local Lite = Instance.new("TextButton")
@@ -21,15 +20,15 @@ local Title_2 = Instance.new("TextLabel")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = false
+ScreenGui.ResetOnSpawn = true
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.244721681, 0, 0.175925925, 0)
-Frame.Size = UDim2.new(0, 617, 0, 325)
-Frame.Active =  true
+Frame.Position = UDim2.new(0.395073563, 0, 0.304012358, 0)
+Frame.Size = UDim2.new(0, 308, 0, 173)
+Frame.Active = true
 
 UICorner.Parent = Frame
 
@@ -38,8 +37,8 @@ Field.Parent = Frame
 Field.BackgroundColor3 = Color3.fromRGB(180, 255, 195)
 Field.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Field.BorderSizePixel = 10
-Field.Position = UDim2.new(0.181094676, 0, 0.206998944, 0)
-Field.Size = UDim2.new(0, 411, 0, 44)
+Field.Position = UDim2.new(0.1031726, 0, 0.217634782, 0)
+Field.Size = UDim2.new(0, 243, 0, 26)
 Field.Font = Enum.Font.SourceSansBold
 Field.PlaceholderText = "Password"
 Field.Text = ""
@@ -53,7 +52,7 @@ Check.Parent = Frame
 Check.BackgroundColor3 = Color3.fromRGB(93, 255, 161)
 Check.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Check.BorderSizePixel = 10
-Check.Position = UDim2.new(0.356552243, 0, 0.534351885, 0)
+Check.Position = UDim2.new(0.212358743, 0, 0.42494908, 0)
 Check.Size = UDim2.new(0, 176, 0, 24)
 Check.Font = Enum.Font.SourceSansBold
 Check.Text = "Submit"
@@ -68,8 +67,8 @@ IT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 IT.BackgroundTransparency = 1.000
 IT.BorderColor3 = Color3.fromRGB(0, 0, 0)
 IT.BorderSizePixel = 0
-IT.Position = UDim2.new(0.166924924, 0, 0.646153867, 0)
-IT.Size = UDim2.new(0, 411, 0, 29)
+IT.Position = UDim2.new(0.351989746, 0, 0.666539192, 0)
+IT.Size = UDim2.new(0, 71, 0, 19)
 IT.Font = Enum.Font.SourceSansBold
 IT.Text = "Status:"
 IT.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -83,8 +82,8 @@ Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Status.BackgroundTransparency = 1.000
 Status.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Status.BorderSizePixel = 0
-Status.Position = UDim2.new(0.166924924, 0, 0.735384643, 0)
-Status.Size = UDim2.new(0, 411, 0, 33)
+Status.Position = UDim2.new(0.099926047, 0, 0.778004885, 0)
+Status.Size = UDim2.new(0, 243, 0, 17)
 Status.Font = Enum.Font.SourceSansBold
 Status.Text = "Unknowing"
 Status.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -98,8 +97,8 @@ Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1.000
 Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Title.BorderSizePixel = 0
-Title.Position = UDim2.new(0, 0, 0.910769224, 0)
-Title.Size = UDim2.new(0, 616, 0, 29)
+Title.Position = UDim2.new(-0.00162615092, 0, 0, 0)
+Title.Size = UDim2.new(0, 308, 0, 29)
 Title.Font = Enum.Font.SourceSansBold
 Title.Text = "Secert Hub V2 KEY SYSTEM"
 Title.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -107,16 +106,13 @@ Title.TextScaled = true
 Title.TextSize = 14.000
 Title.TextWrapped = true
 
-UIAspectRatioConstraint.Parent = Frame
-UIAspectRatioConstraint.AspectRatio = 1.898
-
 Choosing.Name = "Choosing"
 Choosing.Parent = ScreenGui
 Choosing.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
 Choosing.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Choosing.BorderSizePixel = 0
-Choosing.Position = UDim2.new(0.244721681, 0, 0.766975284, 0)
-Choosing.Size = UDim2.new(0, 617, 0, 111)
+Choosing.Position = UDim2.new(0.439859241, 0, 0.587962985, 0)
+Choosing.Size = UDim2.new(0, 199, 0, 251)
 Choosing.Visible = false
 
 Normal.Name = "Normal"
@@ -124,8 +120,8 @@ Normal.Parent = Choosing
 Normal.BackgroundColor3 = Color3.fromRGB(179, 254, 194)
 Normal.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Normal.BorderSizePixel = 10
-Normal.Position = UDim2.new(0.030794166, 0, 0.45045045, 0)
-Normal.Size = UDim2.new(0, 200, 0, 30)
+Normal.Position = UDim2.new(0.111196242, 0, 0.848856747, 0)
+Normal.Size = UDim2.new(0, 153, 0, 18)
 Normal.Font = Enum.Font.SourceSansBold
 Normal.Text = "Normal"
 Normal.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -138,8 +134,8 @@ Lite.Parent = Choosing
 Lite.BackgroundColor3 = Color3.fromRGB(179, 254, 194)
 Lite.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Lite.BorderSizePixel = 10
-Lite.Position = UDim2.new(0.640194476, 0, 0.45045045, 0)
-Lite.Size = UDim2.new(0, 200, 0, 30)
+Lite.Position = UDim2.new(0.142707095, 0, 0.534115732, 0)
+Lite.Size = UDim2.new(0, 141, 0, 19)
 Lite.Font = Enum.Font.SourceSansBold
 Lite.Text = "Lite(Tester)"
 Lite.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -153,8 +149,8 @@ Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title_2.BackgroundTransparency = 1.000
 Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Title_2.BorderSizePixel = 0
-Title_2.Position = UDim2.new(0.00162074552, 0, -0.00814956799, 0)
-Title_2.Size = UDim2.new(0, 616, 0, 29)
+Title_2.Position = UDim2.new(0.00162080547, 0, -0.00814953074, 0)
+Title_2.Size = UDim2.new(0, 198, 0, 29)
 Title_2.Font = Enum.Font.SourceSansBold
 Title_2.Text = "Select The Hub Verison"
 Title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -164,7 +160,7 @@ Title_2.TextWrapped = true
 
 -- Scripts:
 
-local function ATTUD_fake_script() -- Check.LocalScript 
+local function CJYVG_fake_script() -- Check.LocalScript 
 	local script = Instance.new('LocalScript', Check)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -180,8 +176,8 @@ local function ATTUD_fake_script() -- Check.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ATTUD_fake_script)()
-local function MWVEE_fake_script() -- Frame.SmoothDrag 
+coroutine.wrap(CJYVG_fake_script)()
+local function AYXNJP_fake_script() -- Frame.SmoothDrag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Drag = script.Parent
@@ -224,8 +220,8 @@ local function MWVEE_fake_script() -- Frame.SmoothDrag
 		end)
 	
 end
-coroutine.wrap(MWVEE_fake_script)()
-local function GCTSHE_fake_script() -- Normal.LocalScript 
+coroutine.wrap(AYXNJP_fake_script)()
+local function OWBGKJU_fake_script() -- Normal.LocalScript 
 	local script = Instance.new('LocalScript', Normal)
 
 	function NormalHub()
@@ -234,12 +230,11 @@ local function GCTSHE_fake_script() -- Normal.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		NormalHub()
-		wait(1)
 		script.Parent.Parent.Parent.Choosing.Visible = false
 	end)
 end
-coroutine.wrap(GCTSHE_fake_script)()
-local function SZNL_fake_script() -- Lite.LocalScript 
+coroutine.wrap(OWBGKJU_fake_script)()
+local function JSBDQ_fake_script() -- Lite.LocalScript 
 	local script = Instance.new('LocalScript', Lite)
 
 	function liteHub()
@@ -248,8 +243,7 @@ local function SZNL_fake_script() -- Lite.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		liteHub()
-		wait(1)
 		script.Parent.Parent.Parent.Choosing.Visible = false
 	end)
 end
-coroutine.wrap(SZNL_fake_script)()
+coroutine.wrap(JSBDQ_fake_script)()
