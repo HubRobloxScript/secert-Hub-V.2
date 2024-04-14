@@ -4,19 +4,22 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local Keysystem = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
 local UICorner = Instance.new("UICorner")
-local Field = Instance.new("TextBox")
-local Check = Instance.new("TextButton")
-local IT = Instance.new("TextLabel")
-local Status = Instance.new("TextLabel")
-local Title = Instance.new("TextLabel")
-local Choosing = Instance.new("Frame")
-local Normal = Instance.new("TextButton")
-local Lite = Instance.new("TextButton")
-local Title_2 = Instance.new("TextLabel")
-local SECERTFRAME = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
+local Submit = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Select = Instance.new("Frame")
+local Choosing1 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Choosing2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local Choosing1_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
 
 --Properties:
 
@@ -24,269 +27,195 @@ ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
 
+Keysystem.Name = "Keysystem"
+Keysystem.Parent = ScreenGui
+Keysystem.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Keysystem.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Keysystem.BorderSizePixel = 0
+Keysystem.Position = UDim2.new(0.410075665, 0, 0.385802478, 0)
+Keysystem.Size = UDim2.new(0, 208, 0, 147)
+Keysystem.Active = true
+
+TextBox.Parent = Keysystem
+TextBox.BackgroundColor3 = Color3.fromRGB(165, 255, 165)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0769230798, 0, 0.176870748, 0)
+TextBox.Size = UDim2.new(0, 177, 0, 50)
+TextBox.Font = Enum.Font.SourceSansBold
+TextBox.PlaceholderText = "Please Insert Password"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 20.000
+
+UICorner.CornerRadius = UDim.new(0, 20)
+UICorner.Parent = TextBox
+
+Submit.Name = "Submit"
+Submit.Parent = Keysystem
+Submit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Submit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Submit.BorderSizePixel = 0
+Submit.Position = UDim2.new(0.307692319, 0, 0.564625859, 0)
+Submit.Size = UDim2.new(0, 80, 0, 29)
+Submit.Font = Enum.Font.SourceSansBold
+Submit.Text = "Submit"
+Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Submit.TextSize = 20.000
+
+UICorner_2.CornerRadius = UDim.new(0, 20)
+UICorner_2.Parent = Submit
+
+TextLabel.Parent = Keysystem
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 208, 0, 26)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Key-system"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20.000
+
+Select.Name = "Select"
+Select.Parent = ScreenGui
+Select.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Select.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Select.BorderSizePixel = 0
+Select.Position = UDim2.new(0.313789546, 0, 0.387345672, 0)
+Select.Size = UDim2.new(0, 100, 0, 146)
+Select.Visible = false
+
+Choosing1.Name = "Choosing1"
+Choosing1.Parent = Select
+Choosing1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Choosing1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Choosing1.BorderSizePixel = 0
+Choosing1.Position = UDim2.new(0.0599999987, 0, 0.226027399, 0)
+Choosing1.Size = UDim2.new(0, 87, 0, 42)
+Choosing1.Font = Enum.Font.SourceSansBold
+Choosing1.Text = "Secert Hub v2"
+Choosing1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Choosing1.TextScaled = true
+Choosing1.TextSize = 20.000
+Choosing1.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 20)
+UICorner_3.Parent = Choosing1
+
+Choosing2.Name = "Choosing2"
+Choosing2.Parent = Select
+Choosing2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Choosing2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Choosing2.BorderSizePixel = 0
+Choosing2.Position = UDim2.new(0.0599999987, 0, 0.650684953, 0)
+Choosing2.Size = UDim2.new(0, 87, 0, 42)
+Choosing2.Font = Enum.Font.SourceSansBold
+Choosing2.Text = "Secert Hub v2 Lite"
+Choosing2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Choosing2.TextScaled = true
+Choosing2.TextSize = 20.000
+Choosing2.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 20)
+UICorner_4.Parent = Choosing2
+
+TextLabel_2.Parent = Select
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 100, 0, 26)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "selecter"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 20.000
+TextLabel_2.TextWrapped = true
+
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+Frame.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.395073563, 0, 0.304012358, 0)
-Frame.Size = UDim2.new(0, 308, 0, 173)
-Frame.Active = true
+Frame.Position = UDim2.new(0.59920913, 0, 0.387345672, 0)
+Frame.Size = UDim2.new(0, 100, 0, 146)
+Frame.Visible = false
 
-UICorner.Parent = Frame
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Size = UDim2.new(0, 100, 0, 26)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Secert selecter"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 20.000
+TextLabel_3.TextWrapped = true
 
-Field.Name = "Field"
-Field.Parent = Frame
-Field.BackgroundColor3 = Color3.fromRGB(180, 255, 195)
-Field.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Field.BorderSizePixel = 10
-Field.Position = UDim2.new(0.1031726, 0, 0.217634782, 0)
-Field.Size = UDim2.new(0, 243, 0, 26)
-Field.Font = Enum.Font.SourceSansBold
-Field.PlaceholderText = "Password"
-Field.Text = ""
-Field.TextColor3 = Color3.fromRGB(0, 0, 0)
-Field.TextScaled = true
-Field.TextSize = 20.000
-Field.TextWrapped = true
+Choosing1_2.Name = "Choosing1"
+Choosing1_2.Parent = Frame
+Choosing1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Choosing1_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Choosing1_2.BorderSizePixel = 0
+Choosing1_2.Position = UDim2.new(0.0599999987, 0, 0.226027399, 0)
+Choosing1_2.Size = UDim2.new(0, 87, 0, 104)
+Choosing1_2.Font = Enum.Font.SourceSansBold
+Choosing1_2.Text = "Click me"
+Choosing1_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Choosing1_2.TextScaled = true
+Choosing1_2.TextSize = 20.000
+Choosing1_2.TextWrapped = true
 
-Check.Name = "Check"
-Check.Parent = Frame
-Check.BackgroundColor3 = Color3.fromRGB(93, 255, 161)
-Check.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Check.BorderSizePixel = 10
-Check.Position = UDim2.new(0.212358743, 0, 0.42494908, 0)
-Check.Size = UDim2.new(0, 176, 0, 24)
-Check.Font = Enum.Font.SourceSansBold
-Check.Text = "Submit"
-Check.TextColor3 = Color3.fromRGB(0, 0, 0)
-Check.TextScaled = true
-Check.TextSize = 14.000
-Check.TextWrapped = true
-
-IT.Name = "IT"
-IT.Parent = Frame
-IT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-IT.BackgroundTransparency = 1.000
-IT.BorderColor3 = Color3.fromRGB(0, 0, 0)
-IT.BorderSizePixel = 0
-IT.Position = UDim2.new(0.351989746, 0, 0.666539192, 0)
-IT.Size = UDim2.new(0, 71, 0, 19)
-IT.Font = Enum.Font.SourceSansBold
-IT.Text = "Status:"
-IT.TextColor3 = Color3.fromRGB(0, 0, 0)
-IT.TextScaled = true
-IT.TextSize = 14.000
-IT.TextWrapped = true
-
-Status.Name = "Status"
-Status.Parent = Frame
-Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Status.BackgroundTransparency = 1.000
-Status.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Status.BorderSizePixel = 0
-Status.Position = UDim2.new(0.099926047, 0, 0.778004885, 0)
-Status.Size = UDim2.new(0, 243, 0, 17)
-Status.Font = Enum.Font.SourceSansBold
-Status.Text = "Unknowing"
-Status.TextColor3 = Color3.fromRGB(0, 0, 0)
-Status.TextScaled = true
-Status.TextSize = 14.000
-Status.TextWrapped = true
-
-Title.Name = "Title"
-Title.Parent = Frame
-Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title.BackgroundTransparency = 1.000
-Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Title.BorderSizePixel = 0
-Title.Position = UDim2.new(-0.00162615092, 0, 0, 0)
-Title.Size = UDim2.new(0, 308, 0, 29)
-Title.Font = Enum.Font.SourceSansBold
-Title.Text = "Secert Hub V2 KEY SYSTEM"
-Title.TextColor3 = Color3.fromRGB(0, 0, 0)
-Title.TextScaled = true
-Title.TextSize = 14.000
-Title.TextWrapped = true
-
-Choosing.Name = "Choosing"
-Choosing.Parent = ScreenGui
-Choosing.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
-Choosing.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Choosing.BorderSizePixel = 0
-Choosing.Position = UDim2.new(0.439859241, 0, 0.587962985, 0)
-Choosing.Size = UDim2.new(0, 199, 0, 251)
-Choosing.Visible = false
-
-Normal.Name = "Normal"
-Normal.Parent = Choosing
-Normal.BackgroundColor3 = Color3.fromRGB(179, 254, 194)
-Normal.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Normal.BorderSizePixel = 10
-Normal.Position = UDim2.new(0.111196242, 0, 0.848856747, 0)
-Normal.Size = UDim2.new(0, 153, 0, 18)
-Normal.Font = Enum.Font.SourceSansBold
-Normal.Text = "Normal"
-Normal.TextColor3 = Color3.fromRGB(0, 0, 0)
-Normal.TextScaled = true
-Normal.TextSize = 14.000
-Normal.TextWrapped = true
-
-Lite.Name = "Lite"
-Lite.Parent = Choosing
-Lite.BackgroundColor3 = Color3.fromRGB(179, 254, 194)
-Lite.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Lite.BorderSizePixel = 10
-Lite.Position = UDim2.new(0.142707095, 0, 0.534115732, 0)
-Lite.Size = UDim2.new(0, 141, 0, 19)
-Lite.Font = Enum.Font.SourceSansBold
-Lite.Text = "Lite(Tester)"
-Lite.TextColor3 = Color3.fromRGB(0, 0, 0)
-Lite.TextScaled = true
-Lite.TextSize = 14.000
-Lite.TextWrapped = true
-
-Title_2.Name = "Title"
-Title_2.Parent = Choosing
-Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title_2.BackgroundTransparency = 1.000
-Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Title_2.BorderSizePixel = 0
-Title_2.Position = UDim2.new(0.00162080547, 0, -0.00814953074, 0)
-Title_2.Size = UDim2.new(0, 198, 0, 29)
-Title_2.Font = Enum.Font.SourceSansBold
-Title_2.Text = "Select The Hub Verison"
-Title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Title_2.TextScaled = true
-Title_2.TextSize = 14.000
-Title_2.TextWrapped = true
-
-SECERTFRAME.Name = "SECERTFRAME"
-SECERTFRAME.Parent = ScreenGui
-SECERTFRAME.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
-SECERTFRAME.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SECERTFRAME.BorderSizePixel = 0
-SECERTFRAME.Position = UDim2.new(0.395073563, 0, 0.104938269, 0)
-SECERTFRAME.Size = UDim2.new(0, 308, 0, 74)
-SECERTFRAME.Visible = false
-
-TextButton.Parent = SECERTFRAME
-TextButton.BackgroundColor3 = Color3.fromRGB(180, 255, 195)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.0292207785, 0, 0.162162155, 0)
-TextButton.Size = UDim2.new(0, 289, 0, 50)
-TextButton.Font = Enum.Font.SourceSansBold
-TextButton.Text = "Execute Secert One"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
+UICorner_5.CornerRadius = UDim.new(0, 20)
+UICorner_5.Parent = Choosing1_2
 
 -- Scripts:
 
-local function RYUS_fake_script() -- Check.LocalScript 
-	local script = Instance.new('LocalScript', Check)
+local function QTZS_fake_script() -- Submit.LocalScript 
+	local script = Instance.new('LocalScript', Submit)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		if script.Parent.Parent.Field.Text == "Gemcast" then
-			script.Parent.Parent.Status.Text = "Correct Password"
-			wait(1)
-			script.Parent.Parent.Parent.Frame.Visible = false
-			script.Parent.Parent.Parent.Choosing.Visible = true
-		elseif script.Parent.Parent.Field.Text == "secert" then
-			script.Parent.Parent.Status.Text = "secert Password"
-			wait(1)
-			script.Parent.Parent.Parent.Frame.Visible = false
-			script.Parent.Parent.Parent.SECERTFRAME.Visible = true
-		else
-			script.Parent.Parent.Status.Text = "incorrect Password"
-			wait(1)
-			script.Parent.Parent.Status.Text = "Unknowing"
+	script.Parent.Parent.Submit.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.TextBox.Text == "Guest" then
+			script.Parent.Parent.TextBox.Text = "Sucess"
+			wait(0.2)
+			script.Parent.Parent.Parent.Keysystem.Visible =false
+			script.Parent.Parent.Parent.Select.Visible = true
+		elseif script.Parent.Parent.TextBox.Text == "Access" then
+			script.Parent.Parent.TextBox.Text = "Unlock Access"
+			wait(0.2)
+			script.Parent.Parent.Parent.Keysystem.Visible =false
+			script.Parent.Parent.Parent.Frame.Visible = true
 		end
 	end)
 end
-coroutine.wrap(RYUS_fake_script)()
-local function VNFUWB_fake_script() -- Frame.SmoothDrag 
-	local script = Instance.new('LocalScript', Frame)
+coroutine.wrap(QTZS_fake_script)()
+local function RUUIJN_fake_script() -- Choosing1.LocalScript 
+	local script = Instance.new('LocalScript', Choosing1)
 
-	local Drag = script.Parent
-	gsCoreGui = game:GetService("CoreGui")
-	gsTween = game:GetService("TweenService")
-	local UserInputService = game:GetService("UserInputService")
-		local dragging
-		local dragInput
-		local dragStart
-		local startPos
-		local function update(input)
-			local delta = input.Position - dragStart
-			local dragTime = 0.04
-			local SmoothDrag = {}
-			SmoothDrag.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-			local dragSmoothFunction = gsTween:Create(Drag, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
-			dragSmoothFunction:Play()
-		end
-		Drag.InputBegan:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-				dragging = true
-				dragStart = input.Position
-				startPos = Drag.Position
-				input.Changed:Connect(function()
-					if input.UserInputState == Enum.UserInputState.End then
-						dragging = false
-					end
-				end)
-			end
-		end)
-		Drag.InputChanged:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-				dragInput = input
-			end
-		end)
-		UserInputService.InputChanged:Connect(function(input)
-			if input == dragInput and dragging and Drag.Size then
-				update(input)
-			end
-		end)
-	
-end
-coroutine.wrap(VNFUWB_fake_script)()
-local function OOGNEN_fake_script() -- Normal.LocalScript 
-	local script = Instance.new('LocalScript', Normal)
-
-	function NormalHub()
+	function Srt()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/HubRobloxScript/secert-Hub-V.2/main/Script.lua'))()
 	end
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		NormalHub()
-		script.Parent.Parent.Parent.Choosing.Visible = false
-	end)
+	script.Parent.Parent.Choosing1.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Select.Visible = false
+		wait(0.5)
+		Srt()
+	end)                                                                                                                                                   
 end
-coroutine.wrap(OOGNEN_fake_script)()
-local function WAPH_fake_script() -- Lite.LocalScript 
-	local script = Instance.new('LocalScript', Lite)
+coroutine.wrap(RUUIJN_fake_script)()
+local function ZVHTGCK_fake_script() -- Choosing2.LocalScript 
+	local script = Instance.new('LocalScript', Choosing2)
 
-	function liteHub()
+	function Sart()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/HubRobloxScript/Secert-Hub-v2-Lite/main/LIite.lua'))()
 	end
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		liteHub()
-		script.Parent.Parent.Parent.Choosing.Visible = false
-	end)
-end
-coroutine.wrap(WAPH_fake_script)()
-local function XWXX_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	function TheHub()
-		loadstring(game:HttpGet('https://pastebin.com/2b5qqHaT'))()
-	end
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		TheHub()
+	script.Parent.Parent.Choosing2.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Select.Visible = false
 		wait(0.5)
-		script.Parent.Parent.Parent.SECERTFRAME.Visible = false
+		Sart()
 	end)
 end
-coroutine.wrap(XWXX_fake_script)()
+coroutine.wrap(ZVHTGCK_fake_script)()
