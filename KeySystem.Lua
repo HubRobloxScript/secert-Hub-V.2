@@ -280,7 +280,7 @@ local function XWXX_fake_script() -- TextButton.LocalScript
 	local script = Instance.new('LocalScript', TextButton)
 
 	function TheHub()
-		loadstring(game:HttpGet('https://pastebin.com/raw/2b5qqHaT'))()
+		loadstring(game:HttpGet('https://pastebin.com/2b5qqHaT'))()
 	end
 	
 	script.Parent.MouseButton1Click:Connect(function()
